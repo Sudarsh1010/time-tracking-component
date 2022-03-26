@@ -17,7 +17,7 @@ const UserCard = ({ type, setType }) => {
         </section>
       </section>
 
-      <section className="btns">
+      <div className="btns">
         <button
           className={`daily 
             ${type === 'daily'
@@ -59,7 +59,7 @@ const UserCard = ({ type, setType }) => {
         >
           Monthly
         </button>
-      </section>
+      </div>
     </div>
   )
 }
