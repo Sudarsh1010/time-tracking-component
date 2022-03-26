@@ -20,7 +20,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 ### Links
 
 - Solution URL: [Github](https://github.com/Sudarsh1010/time-tracking-component)
-- Live Site URL: [Time Tracking Component](https://advice-generator-frontendmentor.netlify.app/)
+- Live Site URL: [Time Tracking Component](https://time-tracking-component.netlify.app/)
 
 ## My process
 
