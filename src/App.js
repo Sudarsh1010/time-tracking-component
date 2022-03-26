@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
+import Card from './components/TimeCard/Card';
+import UserCard from './components/UserCard/UserCard';
+import data from './data.json';
+import './App.css'
 
 function App() {
+  const [type, setType] = useState('weekly');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="App">
+      <UserCard
+        type={type}
+        setType={setType}
+      />
+      <div className="cards">
+        {
+          data.map((data, index) => (
+            <Card
+              key={index}
+              type={type}
+              data={data}
+            />
+          ))
+        }
+      </div>
+    </main>
   );
 }
 

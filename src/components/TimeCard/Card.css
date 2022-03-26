@@ -1,0 +1,183 @@
+.card {
+  margin: 2.5rem auto;
+  max-width: 325px;
+  border-radius: 1.15rem;
+}
+
+/* card background colors */
+.Work-background {
+  background: var(--work);
+}
+
+.Play-background {
+  background: var(--play);
+}
+
+.Study-background {
+  background: var(--study);
+}
+
+.Social-background {
+  background: var(--social);
+}
+
+.Exercise-background {
+  background: var(--exercise);
+}
+
+.Care-background {
+  background: var(--selfcare);
+}
+
+/* start of card background */
+.Work {
+  background-image: url(../../images/icon-work.svg);
+  background-position: 90%;
+  background-repeat: no-repeat;
+  height: 40px;
+}
+
+.Play {
+  background-image: url(../../images/icon-play.svg);
+  background-position: 90%;
+  background-repeat: no-repeat;
+  height: 40px;
+}
+
+.Study {
+  background-image: url(../../images/icon-study.svg);
+  background-position: 90%;
+  background-repeat: no-repeat;
+  height: 40px;
+}
+
+.Exercise {
+  background-image: url(../../images/icon-exercise.svg);
+  background-position: 90%;
+  background-repeat: no-repeat;
+  height: 40px;
+}
+
+.Social {
+  background-image: url(../../images/icon-social.svg);
+  background-position: 90%;
+  background-repeat: no-repeat;
+  height: 40px;
+}
+
+.Care {
+  background-image: url(../../images/icon-self-care.svg);
+  background-position: 90%;
+  background-repeat: no-repeat;
+  height: 40px;
+}
+/* end of card background */
+
+.info-contanier {
+  cursor: pointer;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem;
+  background: var(--Dark-blue);
+  transition: all 0.3s ease-in-out;
+}
+
+.info-contanier:hover {
+  background: var(--Hover-blue);
+}
+
+.top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-container svg {
+  fill: var(--Pale-Blue);
+  transition: all 0.2s ease-in-out;
+}
+
+.top-container svg:hover {
+  fill: white;
+}
+
+.top-container p {
+  transition: all 0.3s ease-in-out;
+
+  color: white;
+  font-size: 1rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-container h1 {
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  color: white;
+}
+
+.bottom-container p {
+  transition: all 0.3s ease-in-out;
+
+  color: var(--Pale-Blue);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    margin: 0;
+    width: 255px;
+    height: 240px;
+  }
+
+  .Work {
+    height: 45px;
+  }
+
+  .Play {
+    height: 45px;
+  }
+
+  .Study {
+    height: 45px;
+  }
+
+  .Exercise {
+    height: 45px;
+  }
+
+  .Social {
+    height: 45px;
+  }
+
+  .Care {
+    height: 45px;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+
+  .bottom-container h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 5rem;
+    margin-bottom: 0;
+  }
+  .info-contanier {
+    padding: 1.75rem;
+  }
+}
