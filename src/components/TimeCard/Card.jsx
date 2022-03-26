@@ -10,7 +10,7 @@ const Card = ({ type, data }) => {
       </div>
 
       <div className="info-contanier">
-        <section className='top-container'>
+        <div className='top-container'>
           <p>{data.title}</p>
           <svg
             width="21"
@@ -22,7 +22,7 @@ const Card = ({ type, data }) => {
             />
           </svg>
 
-        </section>
+        </div>
 
         <section className='bottom-container'>
           {

@@ -6,7 +6,7 @@ import { images } from '../../constants';
 const UserCard = ({ type, setType }) => {
   return (
     <div className='user-card'>
-      <section className="user">
+      <div className="user">
         <div className="user-photo">
           <img src={images.jeremy} alt="" />
         </div>
@@ -15,9 +15,9 @@ const UserCard = ({ type, setType }) => {
           <p>Report for</p>
           <h2>Jeremy Robson</h2>
         </section>
-      </section>
+      </div>
 
-      <section className="btns">
+      <div className="btns">
         <button
           className={`daily 
             ${type === 'daily'
@@ -59,7 +59,7 @@ const UserCard = ({ type, setType }) => {
         >
           Monthly
         </button>
-      </section>
+      </div>
     </div>
   )
 }
